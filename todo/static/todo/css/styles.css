@@ -1,0 +1,81 @@
+
+form {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: #f4f4f4; 
+    font-family: Arial, sans-serif;
+}
+h1 {
+    color: #333;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    margin: 10px 0;
+}
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+a:hover {
+    text-decoration: underline;
+}
+button {
+    background-color: #fff200;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.todo-container {
+    width: 100%;
+    max-width: 600px; /* Limit the width of the container */
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}

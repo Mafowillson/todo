@@ -1,31 +1,37 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'todo/css/styles.css' %}">
     <title>Create Todo</title>
 </head>
 <body>
-    <h1>Create Todo</h1>
-    <!-- <form action="">
-        <div>
-            <label for="title">title</label>
-            <input type="text" name="title">
-        </div>
-        <div>
-            <label for="description">description</label>
-            <textarea name="description">
-        </div>
-        <div>
-            <label for="completed">completed</label>
-            <input type="text" name="completed">
-        </div>
-        <button type="submit">create</button>
-    </form> -->
-    <form action="" method="post">
-        {% csrf_token %}
-        {{form}}
-        <button type="submit">create</button>
-    </form>
+   <div class="todo-container">
+    <section>
+        <h1>Create Todo</h1>
+        <!-- <form action="">
+            <div>
+                <label for="title">title</label>
+                <input type="text" name="title">
+            </div>
+            <div>
+                <label for="description">description</label>
+                <textarea name="description">
+            </div>
+            <div>
+                <label for="completed">completed</label>
+                <input type="text" name="completed">
+            </div>
+            <button type="submit">create</button>
+        </form> -->
+        <form action="" method="post">
+            {% csrf_token %}
+            {{form}}
+            <button type="submit">create</button>
+        </form>
+    </section>
+   </div>
 </body>
 </html>
