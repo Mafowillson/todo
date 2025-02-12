@@ -7,7 +7,7 @@ def list_task(request):
     context = {
         'tasks': tasks
     }
-    return render(request, 'todo/todo.html', context)
+    return render(request, 'todo/todo_list.html', context)
 
 def create_todo(request):
     form = TaskForm()
@@ -26,7 +26,7 @@ def todo_detail(request, task_id):
         form = TaskForm(request.POST, instance=task)
         if form.is_valid():
             form.save()
-            return redirect('todo:todo_detail', task_id=task.id)
+            return redirect('todo:todo_list')
     else:
         form = TaskForm(instance=task)
     return render(request, 'todo/todo_detail.html', {'form': form, 'task': task})
